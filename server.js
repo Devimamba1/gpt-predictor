@@ -10,8 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  baseURL: process.env.OPENAI_API_BASE
-});
+  });
 
 app.get("/predict", async (req, res) => {
   const asset = req.query.asset || "bitcoin";
