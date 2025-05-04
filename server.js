@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import { OpenAI } from "openai";
 
 dotenv.config();
+console.log("API Key:", process.env.OPENAI_API_KEY); // 🔍 TEMP DEBUG
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
